@@ -195,4 +195,10 @@ export default {
   'option.taxonomicStatuses.valid': 'current',
   'option.taxonomicStatuses.invalid': 'obsolete',
 
+
+  // uoc
+
+  'field.uoc_common.method.name': 'Type of use',
+  'field.uoc_common.materialType.name': 'Research type',
+  'field.uoc_common.useDateGroup.name': 'Visit date',
 };
