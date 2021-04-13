@@ -5,6 +5,7 @@ export default (configContext) => {
     AutocompleteInput,
     CompoundInput,
     DateInput,
+    RichTextInput,
     TextInput,
     TermPickerInput,
     StructuredDateInput,
@@ -497,6 +498,504 @@ export default (configContext) => {
             }),
             view: {
               type: TextInput,
+            },
+          },
+        },
+        basicInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          basicInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.basicInfo.name',
+                  defaultMessage: 'Basic information',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        inventoryHistoryList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          inventoryHistory: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.inventoryHistory.name',
+                  defaultMessage: 'NAGPRA inventory history',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        backgroundSummaryList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          backgroundSummary: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.backgroundSummary.name',
+                  defaultMessage: 'Background and records summary',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        landOwnershipList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          landOwnership: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.landOwnership.name',
+                  defaultMessage: 'Land ownership',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        geographicInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          geographicInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.geographicInfo.name',
+                  defaultMessage: 'Geographic evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        // geographicInfoList: {
+        //   [config]: {
+        //     view: {
+        //       type: CompoundInput,
+        //     },
+        //   },
+        //   geographicInfo: {
+        //     [config]: {
+        //       messages: defineMessages({
+        //         name: {
+        //           id: 'field.places_pahma.geographicInfo.name',
+        //           deoaultMessage: 'Geographic/Territorial evidence',
+        //         },
+        //       }),
+        //       repeating: true,
+        //       view: {
+        //         type: RichTextInput,
+        //         props: {
+        //           multiline: true,
+        //         },
+        //       },
+        //     },
+        //   },
+        // },
+        kinshipEvidenceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          kinshipEvidence: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.kinshipEvidence.name',
+                  defaultMessage: 'Kinship evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        biologicalEvidenceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          biologicalEvidence: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.biologicalEvidence.name',
+                  defaultMessage: 'Biological evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        archaeologicalEvidenceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          archaeologicalEvidence: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.archaeologicalEvidence.name',
+                  defaultMessage: 'Archaeological evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        anthropologicalEvidenceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          anthropologicalEvidence: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.anthropologicalEvidence.name',
+                  defaultMessage: 'Anthropological evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        linguisticEvidenceList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          linguisticEvidence: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.linguisticEvidence.name',
+                  defaultMessage: 'Linguistic evidence',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        oralTraditionList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          oralTradition: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.oralTradition.name',
+                  defaultMessage: 'Oral tradition',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        historicalInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          historicalInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.historicalInfo.name',
+                  defaultMessage: 'Historical information',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        otherInfoList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          otherInfo: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.otherInfo.name',
+                  defaultMessage: 'Other relevant information or expert opinion',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        consultationSummaryList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          consultationSummary: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.consultationSummary.name',
+                  defaultMessage: 'Consultation summary',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: RichTextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+        },
+        museumRecords: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.places_pahma.museumRecords.name',
+                defaultMessage: 'Museum records',
+              },
+            }),
+            view: {
+              type: RichTextInput,
+              props: {
+                multiline: true,
+              },
+            },
+          },
+        },
+        unpublishedManuscriptGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          unpublishedManuscriptGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.unpublishedManuscriptGroup.name',
+                  defaultMessage: 'Unpublished manuscripts',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            unpublishedManuscriptReference: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_pahma.unpublishedManuscriptReference.fullName',
+                    defaultMessage: 'Unpublished manuscript reference',
+                  },
+                  name: {
+                    id: 'field.places_pahma.unpublishedManuscriptReference.name',
+                    defaultMessage: 'Reference',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'citation/local,citation/worldcat',
+                  },
+                },
+              },
+            },
+            unpublishedManuscriptNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_pahma.unpublishedManuscriptNote.fullName',
+                    defaultMessage: 'Reference note',
+                  },
+                  name: {
+                    id: 'field.places_pahma.unpublishedManuscriptNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
+        publishedReportsGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          publishedReportsGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_pahma.publishedReports.name',
+                  defaultMessage: 'Published reports',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            publishedReportsReference: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_pahma.publishedReportsReference.fullName',
+                    defaultMessage: 'Pulibhsed report reference',
+                  },
+                  name: {
+                    id: 'field.places_pahma.publishedReportsReference.name',
+                    defaultMessage: 'Reference',
+                  },
+                }),
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'citation/local,citation/worldcat',
+                  },
+                },
+              },
+            },
+            publishedReportsNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_pahma.publishedReportsNote.fullName',
+                    defaultMessage: 'Reference note',
+                  },
+                  name: {
+                    id: 'field.places_pahma.publishedReportsNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
             },
           },
         },

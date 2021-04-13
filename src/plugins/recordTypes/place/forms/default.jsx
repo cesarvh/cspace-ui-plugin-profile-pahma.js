@@ -109,6 +109,85 @@ const template = (configContext) => {
         {extensions.address.form}
       </Panel>
 
+      <Panel name="research" collapsible collapsed>
+        <Field name="basicInfoList" subpath="ns2:places_pahma">
+          <Field name="basicInfo" />
+        </Field>
+        <Field name="inventoryHistoryList" subpath="ns2:places_pahma">
+          <Field name="inventoryHistory" />
+        </Field>
+
+        <Field name="backgroundSummaryList" subpath="ns2:places_pahma">
+          <Field name="backgroundSummary" />
+        </Field>
+
+        <Field name="landOwnershipList" subpath="ns2:places_pahma">
+          <Field name="landOwnership" />
+        </Field>
+      </Panel>
+
+      <Panel name="culturalAffiliation" collapsible collapsed>
+        <Field name="geographicInfoList" subpath="ns2:places_pahma">
+          <Field name="geographicInfo" />
+        </Field>
+
+        <Field name="kinshipEvidenceList" subpath="ns2:places_pahma">
+          <Field name="kinshipEvidence" />
+        </Field>
+
+        <Field name="biologicalEvidenceList" subpath="ns2:places_pahma">
+          <Field name="biologicalEvidence" />
+        </Field>
+
+        <Field name="archaeologicalEvidenceList" subpath="ns2:places_pahma">
+          <Field name="archaeologicalEvidence" />
+        </Field>
+
+        <Field name="anthropologicalEvidenceList" subpath="ns2:places_pahma">
+          <Field name="anthropologicalEvidence" />
+        </Field>
+
+        <Field name="linguisticEvidenceList" subpath="ns2:places_pahma">
+          <Field name="linguisticEvidence" />
+        </Field>
+
+        <Field name="oralTraditionList" subpath="ns2:places_pahma">
+          <Field name="oralTradition" />
+        </Field>
+
+        <Field name="historicalInfoList" subpath="ns2:places_pahma">
+          <Field name="historicalInfo" />
+        </Field>
+
+        <Field name="otherInfoList" subpath="ns2:places_pahma">
+          <Field name="otherInfo" />
+        </Field>
+
+        <Field name="consultationSummaryList" subpath="ns2:places_pahma">
+          <Field name="consultationSummary" />
+        </Field>
+
+      </Panel>
+
+      <Panel name="docsConsulted" collapsible collapsed>
+
+        <Field name="museumRecords" subpath="ns2:places_pahma" />
+
+        <Field name="unpublishedManuscriptGroupList" subpath="ns2:places_pahma">
+          <Field name="unpublishedManuscriptGroup">
+            <Field name="unpublishedManuscriptReference" />
+            <Field name="unpublishedManuscriptNote" />
+          </Field>
+        </Field>
+
+        <Field name="publishedReportsGroupList" subpath="ns2:places_pahma">
+          <Field name="publishedReportsGroup">
+            <Field name="publishedReportsReference" />
+            <Field name="publishedReportsNote" />
+          </Field>
+        </Field>
+      </Panel>
+
       <Panel name="localityInfo" collapsible collapsed>
         <Row>
           <Field name="vCoordinates" />
